@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>APP NOTICIAS. | Contacto</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">APP NOTICIAS.</div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="favoritos.html">Favoritos</a>
+            <a href="contacto.html" class="active">Contacto</a>
+        </nav>
+    </header>
+    <main class="form-container">
+        <div class="form-box">
+            <h2>Hablemos</h2>
+            <form id="contactForm" onsubmit="enviarFormulario(event)">
+                <input type="text" class="minimal-input" placeholder="Nombre completo *" required>
+                <input type="email" class="minimal-input" placeholder="Correo electrónico *" required>
+                <input type="text" class="minimal-input" placeholder="¿Qué nos quieres contar? *" required>
+                <button type="submit" class="btn-black full-width">Enviar mensaje</button>
+            </form>
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP NOTICIAS. | Inicio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">APP NOTICIAS.</div>
+        <nav>
+            <a href="index.html" class="active">Inicio</a>
+            <a href="favoritos.html">Favoritos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main class="bento-container">
+        <div class="bento-grid" id="bento-grid">
+            
+            <!-- La tarjeta principal (ID 1) -->
+            <div class="bento-card main-card">
+                <img src="https://images.unsplash.com/photo-1495020689067-958852a7765e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Noticia Principal" class="main-card-img">
+                <h2>El impacto de la Inteligencia Artificial en el 2026</h2>
+                <p>Descubre cómo las nuevas tecnologías están remodelando la manera en que trabajamos y aprendemos en el día a día.</p>
+                <div class="actions">
+                    <a href="detalle.html" class="btn-black">Leer Historia Completa</a>
+                    <button class="btn-outline icon-btn" onclick="guardarFavorito(1)">♥</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta secundaria 1 (ID 2) -->
+            <div class="bento-card">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Tecnología" class="card-img">
+                <h3>Tecnología: Nuevo avance en microchips</h3>
+                <div class="actions">
+                    <a href="detalle.html" class="btn-black small">Ver más</a>
+                    <button class="btn-outline small icon-btn" onclick="guardarFavorito(2)">♥</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta secundaria 2 (ID 3) -->
+            <div class="bento-card">
+                <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Turismo" class="card-img">
+                <h3>Turismo Local: Destinos escondidos</h3>
+                <div class="actions">
+                    <a href="detalle.html" class="btn-black small">Ver más</a>
+                    <button class="btn-outline small icon-btn" onclick="guardarFavorito(3)">♥</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta secundaria 3 (ID 4) -->
+            <div class="bento-card">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Educación" class="card-img">
+                <h3>Novedades Educativas post-pandemia</h3>
+                <div class="actions">
+                    <a href="detalle.html" class="btn-black small">Ver más</a>
+                    <button class="btn-outline small icon-btn" onclick="guardarFavorito(4)">♥</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
